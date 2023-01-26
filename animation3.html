@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>animation box</title>
+        <style>
+            .text{
+                background-color:black;
+                width:200px;
+                height:100px;
+                margin:100px;
+                border-radius:20px;
+                border:2px solid black;
+                animation:square 5s ease-in-out infinite;
+                
+            }
+            @keyframes square {
+                0% { transfrom : scale(1) translate(0,0);
+                background-color: aqua;
+                }
+                50% {transform:scale(0,.5)translate(0,300px);
+                    background-color:purple;
+                }
+                100% {transform: scale(1) translate(0,0);
+                background-color: red;
+                }
+            }
+        
+        </style>
+    </head>
+    <body>
+         <div class="text"></div>
+    </body>
+</html>
